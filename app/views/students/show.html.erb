@@ -1,0 +1,6 @@
+<h1><%= @student.name %></h1>
+<h3><%= @student.course %></h3>
+
+<p><%= link_to('Edit', edit_student_path) %></p>
+<p><%= link_to('Delete Record', @student, method: :delete, data: {confirm: 'Are you sure?'}) %></p>
+<p><%= link_to('Back to Home Page', students_path) %></p>

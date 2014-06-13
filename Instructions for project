@@ -1,0 +1,18 @@
+-Create new rails application called student_union.
+-Generate a Student model name and course attributes
+-Create and migrate your database
+-Generate a Students controller with index, show, new and create actions.
+-In your students views folder, create show, new , and index views
+-Edit your routes file so that your student views are accessible. (Resources)
+-Edit your views:
+    -The index view should list all the Students with their name and course. The index
+     view should also have a link to your new view, and each student should have a link
+     to their show view.
+
+    -The new view should have a form for creating a new student.
+
+    -The show view should show the selected student with their name and course.
+-Set the root of you site to be the students/index page.
+-In your model, validate the presence of the name and course attributes.
+-Update your controller with the edit, update, and destroy actions. You'll need to look this
+ up, as we haven't covered it, but it's pretty straight forward.

@@ -1,0 +1,18 @@
+<h1>Sign Up for Course</h1>
+
+<%= form_for(@student) do |f| %>
+  <div>
+    <%= f.label('Student Name:') %>
+    <%= f.text_field(:name) %>
+  </div>
+  <div>
+    <%= f.label('Course Name:') %>
+    <%= f.text_field(:course) %>
+  </div>
+  <div>
+    <%= f.submit('Submit') %>
+  </div>
+
+<% end %>
+
+<p><%= link_to('Cancel', students_path) %></p>

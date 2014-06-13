@@ -1,0 +1,18 @@
+<h1>Make Changes Here</h1>
+
+<%= form_for(@student) do |f| %>
+  <div>
+    <%= f.label('Student Name:') %>
+    <%= f.text_field(:name) %>
+  </div>
+  <div>
+    <%= f.label('Course Name:') %>
+    <%= f.text_field(:course) %>
+  </div>
+  <div>
+    <%= f.submit('Save Changes') %>
+  </div>
+
+<% end %>
+
+<p><%= link_to('Cancel', students_path) %></p>
